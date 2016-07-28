@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0Nu-oU-11O" customClass="MZHEMailBtn">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LuckyThreeButton" translatesAutoresizingMaskIntoConstraints="NO" id="oRJ-PW-Hvo">
+                    <rect key="frame" x="0.0" y="0.0" width="180" height="82"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvq-Wf-ZOl">
+                    <rect key="frame" x="61" y="7" width="57" height="54"/>
+                    <state key="normal" title="星座">
+                        <color key="titleColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" title="星座">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSR-ic-pDa">
+                    <rect key="frame" x="6" y="39" width="37" height="38"/>
+                    <state key="normal" title="停止">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" title="停止">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oRJ-PW-Hvo" firstAttribute="leading" secondItem="0Nu-oU-11O" secondAttribute="leading" id="YSJ-be-mn8"/>
+                <constraint firstItem="oRJ-PW-Hvo" firstAttribute="top" secondItem="0Nu-oU-11O" secondAttribute="top" id="csu-Q4-QHj"/>
+                <constraint firstAttribute="trailing" secondItem="oRJ-PW-Hvo" secondAttribute="trailing" id="ewj-Q3-Ye2"/>
+                <constraint firstAttribute="bottom" secondItem="oRJ-PW-Hvo" secondAttribute="bottom" id="vff-qS-ZnN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="247" y="-34"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LuckyThreeButton" width="180" height="82"/>
+    </resources>
+</document>

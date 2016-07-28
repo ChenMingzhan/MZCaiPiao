@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2W8-Xd-jU8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Base Nav Controller-->
+        <scene sceneID="YXF-AY-Wm5">
+            <objects>
+                <navigationController id="2W8-Xd-jU8" customClass="MZBaseNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Me0-QZ-Bdt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fAs-FF-Z4c" kind="relationship" relationship="rootViewController" id="mFa-yR-Src"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yD0-4p-Rwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-544" y="-461"/>
+        </scene>
+        <!--我的彩票-->
+        <scene sceneID="SJm-1R-cBO">
+            <objects>
+                <viewController id="fAs-FF-Z4c" customClass="MZMineNavController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cKQ-Pk-y5A"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qhs-bw-sAP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="khy-ZL-tKE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易邮箱可以直接登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POu-ZJ-8vS">
+                                <rect key="frame" x="0.0" y="273" width="320" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ab-2w-r9e">
+                                <rect key="frame" x="20" y="309" width="280" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title=" 登录" backgroundImage="login_button_login_normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRl-lE-Tte">
+                                <rect key="frame" x="20" y="402" width="280" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="没有账号直接登录" backgroundImage="login_button_register_normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="uzE-A5-owj">
+                                <rect key="frame" x="12" y="87" width="296" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="p2Y-tp-laY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="POu-ZJ-8vS" firstAttribute="leading" secondItem="khy-ZL-tKE" secondAttribute="leading" id="0KF-ja-aCu"/>
+                            <constraint firstItem="POu-ZJ-8vS" firstAttribute="top" secondItem="uzE-A5-owj" secondAttribute="bottom" constant="48" id="1wk-Wx-y5C"/>
+                            <constraint firstItem="PRl-lE-Tte" firstAttribute="leading" secondItem="1ab-2w-r9e" secondAttribute="leading" id="2uq-j9-4YI"/>
+                            <constraint firstItem="PRl-lE-Tte" firstAttribute="height" secondItem="1ab-2w-r9e" secondAttribute="height" id="44Q-yr-gkk"/>
+                            <constraint firstAttribute="trailing" secondItem="uzE-A5-owj" secondAttribute="trailing" constant="12" id="LEC-BS-Leg"/>
+                            <constraint firstItem="PRl-lE-Tte" firstAttribute="top" secondItem="1ab-2w-r9e" secondAttribute="bottom" constant="55" id="Re6-hP-1g1"/>
+                            <constraint firstItem="PRl-lE-Tte" firstAttribute="width" secondItem="1ab-2w-r9e" secondAttribute="width" id="U4C-Lx-Xwt"/>
+                            <constraint firstItem="PRl-lE-Tte" firstAttribute="trailing" secondItem="1ab-2w-r9e" secondAttribute="trailing" id="Y66-MI-J2c"/>
+                            <constraint firstItem="uzE-A5-owj" firstAttribute="top" secondItem="cKQ-Pk-y5A" secondAttribute="bottom" constant="23" id="cIj-gQ-pN2"/>
+                            <constraint firstItem="1ab-2w-r9e" firstAttribute="leading" secondItem="khy-ZL-tKE" secondAttribute="leading" constant="20" id="eCH-q0-DPU"/>
+                            <constraint firstItem="1ab-2w-r9e" firstAttribute="top" secondItem="POu-ZJ-8vS" secondAttribute="bottom" constant="18" id="ef5-Jp-3eO"/>
+                            <constraint firstAttribute="trailing" secondItem="POu-ZJ-8vS" secondAttribute="trailing" id="gda-ZV-xRu"/>
+                            <constraint firstItem="uzE-A5-owj" firstAttribute="leading" secondItem="khy-ZL-tKE" secondAttribute="leading" constant="12" id="ilE-JL-tZ0"/>
+                            <constraint firstAttribute="trailing" secondItem="1ab-2w-r9e" secondAttribute="trailing" constant="20" id="m47-qf-0D0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的彩票" id="FA1-2U-18w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEW-T3-a8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="-461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LoginScreen" width="296" height="138"/>
+        <image name="login_button_login_normal" width="150" height="38"/>
+        <image name="login_button_register_normal" width="275" height="38"/>
+    </resources>
+</document>

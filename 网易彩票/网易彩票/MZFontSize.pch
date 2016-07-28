@@ -1,0 +1,16 @@
+//
+//  MZFontSize.pch
+//  网易彩票
+//
+//  Created by 铭铭 on 16/3/21.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+#ifndef MZFontSize_pch
+#define MZFontSize_pch
+
+#import "MZSaveDataTool.h"
+
+#define MZFont(s) [UIFont fontWithName:@"MicrosoftYaHei" size:s]
+
+#endif /* MZFontSize_pch */

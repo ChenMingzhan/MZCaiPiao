@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VPv-MD-WnS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Base Nav Controller-->
+        <scene sceneID="Q8P-aa-J6t">
+            <objects>
+                <navigationController id="VPv-MD-WnS" customClass="MZBaseNavController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JeS-cY-p3s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QyD-vC-Nzz" kind="relationship" relationship="rootViewController" id="Eu1-Ss-IrR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnM-oI-LhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24" y="-182"/>
+        </scene>
+        <!--Lucky Nav Controller-->
+        <scene sceneID="4gE-7g-jSg">
+            <objects>
+                <viewController id="QyD-vC-Nzz" customClass="MZLuckyNavController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iA6-VA-Brp"/>
+                        <viewControllerLayoutGuide type="bottom" id="DRj-wJ-CtU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ixr-VW-mFu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uc1-5l-H4a">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lucky_entry_light0" translatesAutoresizingMaskIntoConstraints="NO" id="FRb-fA-WLs">
+                                <rect key="frame" x="45" y="102" width="231" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="AHT-j0-92H"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDe-Pw-Lvv">
+                                <rect key="frame" x="169" y="341" width="140" height="144"/>
+                                <state key="normal" image="luck_entry_roulette_button_normal"/>
+                                <connections>
+                                    <action selector="turntableView:" destination="QyD-vC-Nzz" eventType="touchUpInside" id="qPT-4G-gn8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9O-Xy-D0L">
+                                <rect key="frame" x="11.5" y="157" width="137" height="140"/>
+                                <state key="normal" image="luck_entry_birthday_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouC-vy-eh5">
+                                <rect key="frame" x="162.5" y="151" width="153" height="152"/>
+                                <state key="normal" image="luck_entry_lots_button_normal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAF-qq-VER">
+                                <rect key="frame" x="16" y="343.5" width="130" height="139"/>
+                                <state key="normal" image="luck_entry_number_button_normal"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mAF-qq-VER" firstAttribute="centerY" secondItem="Ixr-VW-mFu" secondAttribute="centerY" constant="129" id="0o2-jg-yoM"/>
+                            <constraint firstAttribute="trailing" secondItem="uc1-5l-H4a" secondAttribute="trailing" id="2f5-di-6hL"/>
+                            <constraint firstItem="FRb-fA-WLs" firstAttribute="leading" secondItem="Ixr-VW-mFu" secondAttribute="leading" constant="45" id="5sO-Gk-lcw"/>
+                            <constraint firstItem="DRj-wJ-CtU" firstAttribute="top" secondItem="uc1-5l-H4a" secondAttribute="bottom" id="FEu-h1-e3n"/>
+                            <constraint firstItem="uc1-5l-H4a" firstAttribute="top" secondItem="iA6-VA-Brp" secondAttribute="bottom" id="HcF-sU-exX"/>
+                            <constraint firstAttribute="trailing" secondItem="FRb-fA-WLs" secondAttribute="trailing" constant="44" id="LgY-yB-NyD"/>
+                            <constraint firstItem="ouC-vy-eh5" firstAttribute="centerY" secondItem="Ixr-VW-mFu" secondAttribute="centerY" constant="-57" id="MuK-LS-D21"/>
+                            <constraint firstItem="N9O-Xy-D0L" firstAttribute="centerY" secondItem="Ixr-VW-mFu" secondAttribute="centerY" constant="-57" id="UNI-eH-5ke"/>
+                            <constraint firstItem="FRb-fA-WLs" firstAttribute="top" secondItem="iA6-VA-Brp" secondAttribute="bottom" constant="38" id="XDP-LS-nGq"/>
+                            <constraint firstItem="N9O-Xy-D0L" firstAttribute="centerX" secondItem="Ixr-VW-mFu" secondAttribute="centerX" constant="-80" id="Zsf-y6-OhS"/>
+                            <constraint firstItem="ouC-vy-eh5" firstAttribute="centerX" secondItem="Ixr-VW-mFu" secondAttribute="centerX" constant="79" id="rN3-Qx-zRZ"/>
+                            <constraint firstItem="uc1-5l-H4a" firstAttribute="leading" secondItem="Ixr-VW-mFu" secondAttribute="leading" id="rOd-8z-y5e"/>
+                            <constraint firstItem="kDe-Pw-Lvv" firstAttribute="centerX" secondItem="Ixr-VW-mFu" secondAttribute="centerX" constant="79" id="w6g-im-fNk"/>
+                            <constraint firstItem="mAF-qq-VER" firstAttribute="centerX" secondItem="Ixr-VW-mFu" secondAttribute="centerX" constant="-79" id="wUk-JW-B43"/>
+                            <constraint firstItem="kDe-Pw-Lvv" firstAttribute="centerY" secondItem="Ixr-VW-mFu" secondAttribute="centerY" constant="129" id="zvy-uZ-QbP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QI8-TV-Lwi"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="uc1-5l-H4a" id="ZIZ-4g-e6I"/>
+                        <outlet property="lightView" destination="FRb-fA-WLs" id="W5H-Hb-uDG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzq-U1-Xss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="-192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="luck_entry_birthday_button_normal" width="137" height="140"/>
+        <image name="luck_entry_lots_button_normal" width="153" height="152"/>
+        <image name="luck_entry_number_button_normal" width="130" height="139"/>
+        <image name="luck_entry_roulette_button_normal" width="140" height="144"/>
+        <image name="lucky_entry_light0" width="231" height="29"/>
+    </resources>
+</document>

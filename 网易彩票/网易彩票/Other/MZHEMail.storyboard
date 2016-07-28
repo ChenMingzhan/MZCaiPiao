@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="neR-Yu-goC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Base Nav Controller-->
+        <scene sceneID="ngy-9n-8fJ">
+            <objects>
+                <navigationController id="neR-Yu-goC" customClass="MZBaseNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vrk-UL-Dkc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hcU-v4-X69" kind="relationship" relationship="rootViewController" id="SFb-ko-31u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sas-dM-V41" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="-101"/>
+        </scene>
+        <!--He Mail Nav Controller-->
+        <scene sceneID="91Q-pu-AJM">
+            <objects>
+                <viewController id="hcU-v4-X69" customClass="MZHeMailNavController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uid-4h-6vQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1GF-ul-wIo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="opB-pB-0qe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wDq-BQ-Wdy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wDq-BQ-Wdy" firstAttribute="top" secondItem="opB-pB-0qe" secondAttribute="top" id="CGd-gG-7fe"/>
+                            <constraint firstAttribute="trailing" secondItem="wDq-BQ-Wdy" secondAttribute="trailing" id="PjY-0f-6PT"/>
+                            <constraint firstItem="1GF-ul-wIo" firstAttribute="top" secondItem="wDq-BQ-Wdy" secondAttribute="bottom" id="gaL-Ha-AFZ"/>
+                            <constraint firstItem="wDq-BQ-Wdy" firstAttribute="leading" secondItem="opB-pB-0qe" secondAttribute="leading" id="tiz-gQ-JCI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="m4O-yH-Vuu">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AbE-If-0g8" customClass="MZHEMailBtn">
+                            <rect key="frame" x="253.5" y="11" width="93" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title=" 合买跟单" image="YellowDownArrow">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="HemaiBtn:" destination="hcU-v4-X69" eventType="touchUpInside" id="M2F-WG-0gs"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kyn-f7-MjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="-155"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="YellowDownArrow" width="16" height="16"/>
+    </resources>
+</document>
